@@ -1,0 +1,30 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="alex.fiori.FioriOnlineTraining.controller.Add"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.ui.layout.form">
+	<Page title="Create Product">
+		<content>
+			<VBox class="sapUiSmallMargin">
+				<f:SimpleForm id="SimpleFormDisplay354" editable="false" layout="ResponsiveGridLayout" title="Product" labelSpanXL="3" labelSpanL="3"
+					labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1"
+					columnsL="1" columnsM="1" singleContainerFullSize="false">
+					<f:content>
+						<Label text="Product ID"></Label><Input id="idProductId"></Input>
+						<Label text="TypeCode"></Label><Input id="idTypeCode"></Input>
+						<Label text="Category"></Label><Input id="idCategory"></Input>
+						<Label text="Name"></Label><Input id="idName"></Input>
+						<Label text="Description"></Label><Input id="idDescription"></Input>
+						<Label text="SupplierID"></Label><Input id="idSupplierId"></Input>
+						<Label text="Price"></Label><Input id="idPrice"></Input>
+						<Label text="CurrencyCode"></Label><Input id="idCurrencyCode"></Input>
+						<Label text="ProductPicUrl"></Label><Input id="idProductPicUrl"></Input>
+					</f:content>
+				</f:SimpleForm>
+			</VBox>
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button text="Save" type="Accept" press="onSave"/>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

@@ -1,0 +1,13 @@
+<mvc:View controllerName="alex.fiori.FioriOnlineTraining.controller.PdfView" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:semantic="sap.m.semantic" xmlns:footerbar="sap.ushell.ui.footerbar">
+	<semantic:DetailPage id="page" navButtonPress="onNavBack" showNavButton="{device>/system/phone}" title="{i18n>detailTitle}"
+		busy="{detailView>/busy}" busyIndicatorDelay="{detailView>/delay}">
+				<FlexBox direction="Column" renderType="Div" class="sapUiSmallMargin">
+					<PDFViewer id="idPDFViewer" title="PDF Viewer" height="800px">
+						<layoutData>
+							<FlexItemData growFactor="1"/>
+						</layoutData>
+					</PDFViewer>
+				</FlexBox>
+	</semantic:DetailPage>
+</mvc:View>
